@@ -16,7 +16,7 @@ In your web page:
 <script src="dist/markovmaker.min.js"></script>
 <script>
 jQuery(function($) {
-  $.awesome(); // "awesome"
+    var markovSentence =   $.markovmaker('input text'); 
 });
 </script>
 ```
