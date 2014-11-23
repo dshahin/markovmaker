@@ -12,13 +12,7 @@
   var wordstats = {};
   var sentences = [];
 
-  // Collection method.
-  $.fn.markovmaker = function () {
-    return this.each(function (i) {
-      // Do something to each selected element.
-      $(this).html('markovmaker' + i);
-    });
-  };
+  
 
   // Static method.
   $.markovmaker = function (options, input) {
@@ -37,12 +31,7 @@
     word_splitter: /\s/
   };
 
-  // Custom selector.
-  $.expr[':'].markovmaker = function (elem) {
-    // Does this element contain the name of your plugin?
-    //return $(elem).text().indexOf('markovmaker') !== -1;
-    return $(elem).hasClass('markovmaker') ;
-  };
+  
 
   function markov(options,input){
     //options = $.extend({}, $.markovmaker.options, options);

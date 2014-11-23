@@ -27,16 +27,8 @@
     }
   });
 
-  test('is chainable', function() {
-    expect(1);
-    // Not a bad test to run on collection methods.
-    strictEqual(this.elems.markovmaker(), this.elems, 'should be chainable');
-  });
-
-  test('is markovmaker', function() {
-    expect(1);
-    strictEqual(this.elems.markovmaker().text(), 'markovmaker0markovmaker1markovmaker2', 'should be markovmaker');
-  });
+  
+  
 
   module('jQuery.markovmaker');
 
@@ -46,17 +38,6 @@
     strictEqual($.markovmaker({punctuation: '!'},'this is the beginning'), 'this is the beginning!', 'should be thoroughly markovmaker');
   });
 
-  module(':markovmaker selector', {
-    // This will run before each test in this module.
-    setup: function() {
-      this.elems = $('#qunit-fixture').children();
-    }
-  });
-
-  test('is markovmaker', function() {
-    expect(1);
-    // Use deepEqual & .get() when comparing jQuery objects.
-    deepEqual(this.elems.filter(':markovmaker').get(), this.elems.last().get(), 'knows markovmaker when it sees it');
-  });
+  
 
 }(jQuery));
