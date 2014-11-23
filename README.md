@@ -25,7 +25,7 @@ jQuery(function($) {
 _(Coming soon)_
 
 ## Examples
-_(Coming soon)_
+<iframe width="100%" height="300" src="http://jsfiddle.net/dshahin/pgw3dtbb/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ## Release History
 _(Nothing yet)_
