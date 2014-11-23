@@ -34,8 +34,8 @@
 
   test('is markovmaker', function() {
     expect(2);
-    strictEqual($.markovmaker(null,'this is the beginning'), 'this is the beginning.', 'should be markovmaker');
-    strictEqual($.markovmaker({punctuation: '!'},'this is the beginning'), 'this is the beginning!', 'should be thoroughly markovmaker');
+    strictEqual($.markovmaker('this is the beginning'), 'this is the beginning.', 'should be markovmaker');
+    strictEqual($.markovmaker('this is the beginning',{punctuation: '!'}), 'this is the beginning!', 'should be thoroughly markovmaker');
   });
 
   

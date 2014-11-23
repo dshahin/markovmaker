@@ -12,10 +12,8 @@
   var wordstats = {};
   var sentences = [];
 
-  
-
   // Static method.
-  $.markovmaker = function (options, input) {
+  $.markovmaker = function (input,options) {
     // Override default options with passed-in options.
     options = $.extend({}, $.markovmaker.options, options);
     // Return the name of your plugin plus a punctuation character.
@@ -30,8 +28,6 @@
     punctuation_marks: /\.|\;|\?|\:|\n/,
     word_splitter: /\s/
   };
-
-  
 
   function markov(options,input){
     //options = $.extend({}, $.markovmaker.options, options);
@@ -70,14 +66,10 @@
         }
     }
     
-    
     //add a period to end of sentence
     var output =  make_sentence(options.min_length) ;
     return output + options.punctuation;
   }
-
-
-
 
   //given an array, return a random element
   var choice = function (a) {
