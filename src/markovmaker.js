@@ -80,35 +80,35 @@
 
 
   //given an array, return a random element
-var choice = function (a) {
-    var i = Math.floor(a.length * Math.random());
-    return a[i];
-};
+  var choice = function (a) {
+      var i = Math.floor(a.length * Math.random());
+      return a[i];
+  };
 
-var make_sentence = function (min_length) {
-    //pick a random starting word
-    var word = choice(startwords);
-    //start a new sentence
-    var sentence = [word];
-    //pick our word from the stats object
-    while (wordstats.hasOwnProperty(word)) {
-        //get the array of words that follow this word
-        var next_words = wordstats[word];
-        //choose one randomly
-        word = choice(next_words);
-        //add to our sentence
-        sentence.push(word);
-        //check sentence length and if we are on a terminal word
-        if (sentence.length > min_length && terminals.hasOwnProperty(word)){
-            break;
-        }
-    }
-    //if sentence is too short, try again
-    if (sentence.length < min_length){
-      return make_sentence(min_length);
-    }
-    //join the words with spaces
-    return sentence.join(' ');
-};
+  var make_sentence = function (min_length) {
+      //pick a random starting word
+      var word = choice(startwords);
+      //start a new sentence
+      var sentence = [word];
+      //pick our word from the stats object
+      while (wordstats.hasOwnProperty(word)) {
+          //get the array of words that follow this word
+          var next_words = wordstats[word];
+          //choose one randomly
+          word = choice(next_words);
+          //add to our sentence
+          sentence.push(word);
+          //check sentence length and if we are on a terminal word
+          if (sentence.length > min_length && terminals.hasOwnProperty(word)){
+              break;
+          }
+      }
+      //if sentence is too short, try again
+      if (sentence.length < min_length){
+        return make_sentence(min_length);
+      }
+      //join the words with spaces
+      return sentence.join(' ');
+  };
 
 }(jQuery));
