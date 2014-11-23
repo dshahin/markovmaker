@@ -1,6 +1,6 @@
 # markovmaker
 
-The best jQuery plugin ever.
+Generate output text in the style of the input text.  Uses Markov chains to generate sentences of a minimum length.  
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ In your web page:
 <script src="dist/markovmaker.min.js"></script>
 <script>
 jQuery(function($) {
-    var markovSentence =   $.markovmaker('input text'); 
+    var markovSentence =   $.markovmaker('input text', {punctuation: '!'}); //"input text!" 
 });
 </script>
 ```
