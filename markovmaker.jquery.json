@@ -1,0 +1,28 @@
+{
+  "name": "markovmaker",
+  "title": "markovmaker",
+  "description": "The best jQuery plugin ever.",
+  "version": "",
+  "homepage": "",
+  "author": {
+    "name": "dan shahin",
+    "url": "https://github.com/dshahin"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ]
+}
