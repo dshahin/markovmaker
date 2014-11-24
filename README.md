@@ -22,7 +22,6 @@ jQuery(function($) {
 ```
 
 ## Documentation
-_(Coming soon)_
 ```javascript
 // Static method default options.
   $.markovmaker.options = {
