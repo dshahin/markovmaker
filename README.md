@@ -23,7 +23,15 @@ jQuery(function($) {
 
 ## Documentation
 _(Coming soon)_
-
+```javascript
+// Static method default options.
+  $.markovmaker.options = {
+    punctuation: '.',
+    min_length : 2,
+    punctuation_marks: /\.|\;|\?|\:|\n/,
+    word_splitter: /\s/
+  };
+```
 ## Examples
 <a href="http://jsfiddle.net/dshahin/pgw3dtbb/embedded/">JSFiddle example</a>
 
