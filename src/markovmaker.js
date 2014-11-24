@@ -52,7 +52,7 @@
             var thisWord = words[j],
                 nextWord = words[j + 1];
             //optimization
-            if(thisWord !== ''){
+            if(thisWord !== '' && nextWord !== null){
                 if (!wordstats.hasOwnProperty(thisWord)) {
                     //first time we've seen this word
                     //create an array with the next word in it
