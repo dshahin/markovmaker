@@ -20,7 +20,10 @@ jQuery(function($) {
 });
 </script>
 ```
-
+##Installation
+```
+bower install markovmaker
+```
 ## Documentation
 ```javascript
 // Static method default options.
